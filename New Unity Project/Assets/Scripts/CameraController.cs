@@ -2,23 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour{
-
+public class CameraController : MonoBehaviour
+{
     public GameObject camera;
+    public float stretch;
+    public float maxTime;
 
+    private CameraPath path;
 
-    void Update(){
+    void Start()
+    {
+        path = new CameraPath(stretch, camera.transform.position.y, maxTime);
+    }
 
-        float time = Time.time + 0.067f;
-        
-        
-       // Debug.Log(time);
-        
-        if (!CameraPath.isCompleted(time)){
-
-            camera.transform.position = new Vector3(0.0f, CameraPath.startPathZ(time), 0.0f);
-            camera.transform.Rotate(CameraPath.startPathRotationX(time), 0,0);
+    void Update()
+    {   
+        if (!path.isCompleted()){
+            path.updateTime(Time.time);
+            camera.transform.position = new Vector3(0.0f, path.pathZ(), 0.0f);
+            camera.transform.Rotate(path.pathRotationX(), 0f, 0f);
         }
     }
 }
-
