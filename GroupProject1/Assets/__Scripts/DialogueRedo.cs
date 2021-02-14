@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DialogueRedo : MonoBehaviour
 {
@@ -11,12 +12,12 @@ public class DialogueRedo : MonoBehaviour
     public float typingSpeed;
 
     public GameObject continueButton;
-    
+
+
 
     private void Start()
     {
         StartCoroutine(Type());
-        
     }
 
     private void Update()
@@ -24,7 +25,7 @@ public class DialogueRedo : MonoBehaviour
         if(textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
-           
+            
         }
     }
 
