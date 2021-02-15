@@ -10,6 +10,9 @@ public class PlayPictures : MonoBehaviour
     public RawImage hometownImage;
     public RawImage waterfallImage;
     public GameObject textDisplay;
+    public GameObject textBackground;
+
+    public int time;
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +29,6 @@ public class PlayPictures : MonoBehaviour
 
         waterfallImage.enabled = true;
         textDisplay.SetActive(true);
-        yield return new WaitForSeconds(5);
-        waterfallImage.enabled = false;
-        textDisplay.SetActive(false);
-        
+        textBackground.SetActive(true);
     }
 }

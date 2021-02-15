@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -117, y: 86.000015}
+  m_AnchoredPosition: {x: -117, y: 105.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &30897912
@@ -701,12 +701,12 @@ MonoBehaviour:
   - 'Mirthal: Hello? Are you awake yet?'
   - 'You: ...'
   - 'Mirthal: Nice to meet you! I''m Mirthal.'
-  - 'Mirthal: Are you okay? Are you hurt? I just found you lying here alone.'
+  - 'Mirthal: Are you okay? Are you hurt? I just found you here alone.'
   - 'You: Where am I? How do I get out of here? I need to go home!'
   - 'Mirthal: Woah, slow down buddy, you are in Wyrie''s castle. Most people don''t
     survive very long here.'
   - 'Mirthal: Unfortunately I''m a slave to Wyrie and I can''t escape. But I can
-    try helping you get out of here.'
+    try to help you get out of here.'
   - 'You: Who''s Wyrie?'
   - 'Mirthal: He''s the owner of this castle. He''s a very powerful ruler and you
     don''t want to make him mad!'
@@ -715,9 +715,9 @@ MonoBehaviour:
     all of the objects in this room by clicking on them.'
   - 'Mirthal: If it''s an important object, it will give you clues that you will
     have to put together in order to get out of here.'
-  - 'Mirthal: If you find yourself struggling, you can ask for hints using this button,
-    but there will be consequences... We will start in a non-violent room, but it
-    will get more difficult as we go through the castle. Brace yourself!'
+  - 'Mirthal: If you find yourself struggling, you can ask for hints using the "hint
+    button", but there will be consequences... We will start in a non-violent room,
+    but it will get more difficult as we go through the castle. Brace yourself!'
   - 'You: Got it!'
   - Press X to continue
   typingSpeed: 0.000001
@@ -2938,7 +2938,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -1, y: 12}
-  m_SizeDelta: {x: 450, y: 130}
+  m_SizeDelta: {x: 450, y: 150}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &1947666708
 GameObject:
