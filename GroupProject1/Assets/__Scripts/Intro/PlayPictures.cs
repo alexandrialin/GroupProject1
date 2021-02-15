@@ -17,6 +17,7 @@ public class PlayPictures : MonoBehaviour
         StartCoroutine(DisplayImage());
     }
 
+    //Display the images for a set amount of time (hometown first, then text and waterfall)
     IEnumerator DisplayImage()
     {
         hometownImage.enabled = true;

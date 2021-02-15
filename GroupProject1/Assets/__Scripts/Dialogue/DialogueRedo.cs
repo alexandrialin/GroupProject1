@@ -20,6 +20,7 @@ public class DialogueRedo : MonoBehaviour
         StartCoroutine(Type());
     }
 
+    // Only display the continue button if the given sentence is complete
     private void Update()
     {
         if(textDisplay.text == sentences[index])
@@ -29,6 +30,7 @@ public class DialogueRedo : MonoBehaviour
         }
     }
 
+    // Give the text the "typed" appearance
     IEnumerator Type()
     {
         foreach(char letter in sentences[index].ToCharArray())
@@ -38,6 +40,7 @@ public class DialogueRedo : MonoBehaviour
         }
     }
 
+    // Set a reference to the next sentence / determine if the previous sentence has completed
     public void NextSentence()
     {
         continueButton.SetActive(false);
