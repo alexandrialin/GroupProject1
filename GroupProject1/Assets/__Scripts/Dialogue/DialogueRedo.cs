@@ -13,12 +13,11 @@ public class DialogueRedo : MonoBehaviour
 
     public GameObject continueButton;
 
-
-
     private void Start()
     {
         StartCoroutine(Type());
     }
+
 
     // Only display the continue button if the given sentence is complete
     private void Update()
@@ -54,7 +53,6 @@ public class DialogueRedo : MonoBehaviour
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
-            
         }
     }
 }
