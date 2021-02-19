@@ -6,14 +6,38 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/__Scenes/Scene_1.unity
+    path: Assets/__Scenes/CharMenu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/__Scenes/Scene_1.unity
+    guid: 7a15662b0b6a541d79a494b1a3a32920
   - enabled: 1
     path: Assets/__Scenes/Scene_Intro.unity
     guid: 02096701dba08494f81463457bc2fbae
   - enabled: 1
-    path: Assets/__Scenes/Scene_2.unity
+    path: Assets/__Scenes/Scene 2/Scene_2.1.unity
     guid: 97b9ddd28fe8c094393032b28fa69b0c
+  - enabled: 1
+    path: Assets/__Scenes/Scene 2/Picture1.unity
+    guid: c544bb129c33274469edaaaffd81d5aa
+  - enabled: 1
+    path: Assets/__Scenes/Scene 2/Scene_2.2.unity
+    guid: 7f427a5c117c13e429896ffe9151703f
+  - enabled: 1
+    path: Assets/__Scenes/Scene 2/Picture2.unity
+    guid: 9c04d1465f031504793ce490914be944
+  - enabled: 1
+    path: Assets/__Scenes/Scene 2/Scene_2.3.unity
+    guid: 150758b50f6b54d458aba6ff44c48c7f
+  - enabled: 1
+    path: Assets/__Scenes/Scene 2/Picture3.unity
+    guid: 27cd4ca44d7ca184f94c9a5589572feb
+  - enabled: 1
+    path: Assets/__Scenes/Scene 2/Scene_2.4.unity
+    guid: 304794405657f8f46b7805a07acd0eb4
+  - enabled: 1
+    path: Assets/__Scenes/Scene 2/Picture4.unity
+    guid: c7aa16371796f8e49816a9ce7033ce35
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 4a9aeeee45adf5b4da78fae32c1c04a3,
       type: 2}

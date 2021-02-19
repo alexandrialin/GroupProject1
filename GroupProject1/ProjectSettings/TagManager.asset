@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Picture
+  - Picture2
+  - Picture3
+  - PIcture1
+  - Picture4
+  - Picture1
+  - restart
+  - continue
   layers:
   - Default
   - TransparentFX

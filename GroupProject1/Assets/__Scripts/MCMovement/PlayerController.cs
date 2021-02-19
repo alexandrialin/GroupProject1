@@ -2,20 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed = 0;
 
     private Rigidbody rb;
-
     private float movementX;
     private float movementY;
+    public GameObject x_sign;
+    public GameObject block;
+    private CameraPath path;
+    public bool camSwitch = false;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
     }
 
     // Get a vector 2 value
@@ -35,4 +40,6 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(movement * speed);
     }
 
-}
+
+
+    }
