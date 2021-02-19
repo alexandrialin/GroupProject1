@@ -12,6 +12,16 @@ TagManager:
   - Picture1
   - restart
   - continue
+  - fox
+  - water
+  - fire
+  - earth
+  - air
+  - door
+  - back
+  - hint1
+  - hint2
+  - hint3
   layers:
   - Default
   - TransparentFX

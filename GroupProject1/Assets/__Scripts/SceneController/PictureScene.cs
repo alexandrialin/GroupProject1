@@ -29,6 +29,18 @@ public class PictureScene : MonoBehaviour
         {
             SceneManager.LoadScene(10);
         }
+        if (gameObject.CompareTag("continue"))
+        {
+            SceneManager.LoadScene(11);
+        }
+        if (gameObject.CompareTag("fox"))
+        {
+            SceneManager.LoadScene(12);
+        }
+        if (gameObject.CompareTag("door"))
+        {
+            SceneManager.LoadScene(13);
+        }
     }
     
     
