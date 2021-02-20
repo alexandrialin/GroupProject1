@@ -37,10 +37,13 @@ public class Points : MonoBehaviour
         if (sceneName == "Stats")
         {
             text1.text = "Congratulations! You win";
-            text2.text = points + " Health Points Overall";
+            if (weapon == 0)
+            {
+                text2.text = (points - 100) + " points this round \n" + points + " Health Points Overall";
+            }
             if (weapon == 1)
             {
-                text2.text = points + " Health Points Overall \n You have obtained a bonus weapon!";
+                text2.text = (points - 100) + " points this round \n" + points + " Health Points Overall \n You have obtained a bonus weapon!";
             }
 
 
@@ -51,12 +54,12 @@ public class Points : MonoBehaviour
         if (gameObject.CompareTag("hint1"))
         {
             points = points - 2;
-            text1.text = "Translate binary numbers to letters (A=0, Z=25)"+points;
+            text1.text = "Translate binary numbers to letters (A=0, Z=25)";
         }
         if (gameObject.CompareTag("hint2"))
         {
             points = points - 2;
-            text1.text = "Son of the God of Lightning, half human half God"+points;
+            text1.text = "Son of the God of Lightning, half human half God";
         }
         if (gameObject.CompareTag("hint3"))
         {

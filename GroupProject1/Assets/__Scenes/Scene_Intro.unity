@@ -206,7 +206,7 @@ PrefabInstance:
     - target: {fileID: 8302228757612447591, guid: 061024ab2247d8248926f254c3ac945d,
         type: 3}
       propertyPath: sentences.Array.data[0]
-      value: All I remeber is the waterfall... I need to get back! (Press x to continue)
+      value: All I remember is the waterfall... I need to get back! (Press x to continue)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 061024ab2247d8248926f254c3ac945d, type: 3}
