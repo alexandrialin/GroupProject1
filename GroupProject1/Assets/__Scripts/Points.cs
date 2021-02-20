@@ -36,14 +36,14 @@ public class Points : MonoBehaviour
         }
         if (sceneName == "Stats")
         {
-            text1.text = "Congratulations! You win";
+            text1.text = "Round 1 Stats:";
             if (weapon == 0)
             {
-                text2.text = (points - 100) + " points this round \n" + points + " Health Points Overall";
+                text2.text = (points - 100) + " points this round \n\nYou have " + points + " health points overall";
             }
             if (weapon == 1)
             {
-                text2.text = (points - 100) + " points this round \n" + points + " Health Points Overall \n You have obtained a bonus weapon!";
+                text2.text = (points - 100) + " points this round \n\nYou have " + points + " health points overall \n\n You have obtained a bonus weapon!";
             }
 
 
