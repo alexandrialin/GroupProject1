@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8302228757612447589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8302228757612447588}
+  - component: {fileID: 8302228757612447591}
+  m_Layer: 0
+  m_Name: DialogueManagerRedo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8302228757612447588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302228757612447589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 575, y: 249, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8302228757612447591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302228757612447589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd635db9e67bc64db8896ba9e9f8b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 0}
+  sentences:
+  - 'Mirthal: Hello? Are you awake yet?'
+  - 'You: ...'
+  - 'Mirthal: Nice to meet you! I''m Mirthal.'
+  - 'Mirthal: Are you okay? Are you hurt? I just found you here alone.'
+  - 'You: Where am I? How do I get out of here? I need to go home!'
+  - 'Mirthal: Woah, slow down buddy, you are in Wyrie''s castle. Most people don''t
+    survive very long here.'
+  - 'Mirthal: Unfortunately I''m a slave to Wyrie and I can''t escape. But I can
+    try to help you get out of here.'
+  - 'You: Who''s Wyrie?'
+  - 'Mirthal: He''s the owner of this castle. He''s a very powerful ruler and you
+    don''t want to make him mad!'
+  - 'You: I see. How do I get out of here?'
+  - 'Mirthal: This room has puzzles that you have to solve. You can look through
+    all of the objects in this room by clicking on them.'
+  - 'Mirthal: If it''s an important object, it will give you clues that you will
+    have to put together in order to get out of here.'
+  - 'Mirthal: If you find yourself struggling, you can ask for hints using the "hint
+    button", but there will be consequences... We will start in a non-violent room,
+    but it will get more difficult as we go through the castle. Brace yourself!'
+  - 'You: Got it!'
+  - You may find a calculator useful throughout the game.
+  - Press X to continue
+  typingSpeed: 0.000001
+  continueButton: {fileID: 0}

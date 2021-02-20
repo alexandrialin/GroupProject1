@@ -51,12 +51,12 @@ public class Points : MonoBehaviour
         if (gameObject.CompareTag("hint1"))
         {
             points = points - 2;
-            text1.text = "Use binary to decrypt numbers, and use numbers to translate to words"+points;
+            text1.text = "Translate binary numbers to letters (A=0, Z=25)"+points;
         }
         if (gameObject.CompareTag("hint2"))
         {
             points = points - 2;
-            text1.text = "Son of God of Lightning, half human half God"+points;
+            text1.text = "Son of the God of Lightning, half human half God"+points;
         }
         if (gameObject.CompareTag("hint3"))
         {
