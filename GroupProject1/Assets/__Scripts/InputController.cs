@@ -63,22 +63,38 @@ public class InputController : MonoBehaviour
 
 
     }
+
+    IEnumerator Hesitate()
+    {
+        text.text = "Sorry you are incorrect";
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(14);
+    }
+
+    IEnumerator Hesitate2()
+    {
+        if (gameObject.CompareTag("earth"))
+        {
+            text.text = "Congrats! You get a new weapon";
+            yield return new WaitForSeconds(2);
+            SceneManager.LoadScene(14);
+        }
+    }
+
     void TaskOnClick()
     {
         if (gameObject.CompareTag("water") || gameObject.CompareTag("fire") || gameObject.CompareTag("air"))
         {
-            text.text = "Sorry you are incorrect";
-            SceneManager.LoadScene(14);
+            StartCoroutine(Hesitate());
         }
         if (gameObject.CompareTag("back"))
         {
             SceneManager.LoadScene(14);
         }
 
-        if (gameObject.CompareTag("water"))
+        if (gameObject.CompareTag("earth"))
         {
-            text.text = "Congrats! You get a new weapon";
-            SceneManager.LoadScene(14);
+            StartCoroutine(Hesitate2());
         }
         if (gameObject.CompareTag("hint1"))
         {

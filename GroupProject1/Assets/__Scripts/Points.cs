@@ -13,8 +13,8 @@ public class Points : MonoBehaviour
     [SerializeField]
     private Text text2;
     public Button yourButton;
-    private int points;
-    private int weapon;
+    static int points;
+    static int weapon;
 
     void Awake()
     {
