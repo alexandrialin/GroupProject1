@@ -11,6 +11,11 @@ public class InterfaceRemoval : MonoBehaviour
     public GameObject UI;
 
     private int count = 0;
+
+    public void Start()
+    {
+        UI.SetActive(true);
+    }
     
     public void removeUI()
     {
