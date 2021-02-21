@@ -13,13 +13,11 @@ public class Points : MonoBehaviour
     [SerializeField]
     private Text text2;
     public Button yourButton;
-    static int points;
-    static int weapon;
+    public static int points;
+    public static int weapon;
 
     void Awake()
     {
-
-
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
@@ -45,8 +43,6 @@ public class Points : MonoBehaviour
             {
                 text2.text = (points - 100) + " points this round \n\nYou have " + points + " health points overall \n\n You have obtained a bonus weapon!";
             }
-
-
         }
     }
     void TaskOnClick()

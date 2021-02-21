@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
 
     public GameObject textbackground;
     public TextMeshProUGUI timer;
-    public Text finished_banner;
+    public Text banner;
         
     void Start()
     {
@@ -33,13 +33,21 @@ public class Timer : MonoBehaviour
                 deltatime = 0; 
                 try
                 {
+                    if(wheel.isFirstRun())
+                    {
+                        banner.text = "GO!";
+                    }
+                    if (!wheel.isFirstRun())
+                    {
+                        banner.text = "";
+                    }
+
                     timer.text = wheel.toString();
                     wheel.rollDown();
                 }
                 catch (OutOfTimeException ex)
                 {
-                    
-                    finished_banner.text = "Out Of Time!";
+                    banner.text = "Out Of Time!";
                 }
             }
         }

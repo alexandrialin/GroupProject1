@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 403665880}
   - component: {fileID: 403665879}
   m_Layer: 5
-  m_Name: Finished Banner
+  m_Name: Banner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -818,6 +818,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e07a6745450ccd41b1988d79f3592a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: {fileID: 0}
+  pointsInt: 0
+  globalPoints: {fileID: 0}
 --- !u!4 &1006152366
 Transform:
   m_ObjectHideFlags: 0
@@ -1125,10 +1128,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   start_min: 0
-  start_seconds: 2
+  start_seconds: 10
   textbackground: {fileID: 518384767}
   timer: {fileID: 194817836}
-  finished_banner: {fileID: 403665879}
+  banner: {fileID: 403665879}
 --- !u!4 &1573879076
 Transform:
   m_ObjectHideFlags: 0

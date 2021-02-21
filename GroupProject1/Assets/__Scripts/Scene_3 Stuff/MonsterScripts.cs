@@ -12,8 +12,8 @@ public class MonsterScripts : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pointsInt = globalPoints.points;
-        points.Text = globalPoints.points;
+       // pointsInt = globalPoints.points;
+       // points.Text = globalPoints.points;
     }
 
     // Update is called once per frame
