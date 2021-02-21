@@ -14,7 +14,10 @@ public class TimeWheel
 
     public void rollDown()
     {
-      
+        if (minuteWheel == 0 && secondsWheel == 0)
+        {
+            throw new OutOfTimeException();
+        }
         if (secondsWheel != 0)
         {
             secondsWheel = secondsWheel - 1;
@@ -23,10 +26,7 @@ public class TimeWheel
             minuteWheel = minuteWheel - 1;
             secondsWheel = 59f;
         }
-        if(minuteWheel == 0 && secondsWheel == 0)
-        {
-            throw new OutOfTimeException();
-        }
+      
     }
     public String toString()
     {

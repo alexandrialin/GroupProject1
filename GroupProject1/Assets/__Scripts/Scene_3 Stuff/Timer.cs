@@ -9,6 +9,8 @@ public class Timer : MonoBehaviour
     private TimeWheel wheel;
     private float deltatime = 0;
 
+    public float start_min;
+    public float start_seconds;
 
     public GameObject textbackground;
     public TextMeshProUGUI timer;
@@ -16,7 +18,7 @@ public class Timer : MonoBehaviour
         
     void Start()
     {
-        wheel = new TimeWheel(0f,10f);
+        wheel = new TimeWheel(start_min, start_seconds);
     }
 
     // Update is called once per frame
@@ -31,13 +33,12 @@ public class Timer : MonoBehaviour
                 deltatime = 0; 
                 try
                 {
-                    wheel.rollDown();
                     timer.text = wheel.toString();
-                    Debug.Log(wheel.toString());
+                    wheel.rollDown();
                 }
                 catch (OutOfTimeException ex)
                 {
-                    timer.text = wheel.toString();
+                    
                     finished_banner.text = "Out Of Time!";
                 }
             }
