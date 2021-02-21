@@ -156,3 +156,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  x_sign: {fileID: 764090933405005201, guid: 4ef3df79e5a6a3b469dc8979c3ac8df1, type: 3}
+  block: {fileID: 0}
+  MainCamera: {fileID: 5604619507777981743, guid: 8c0b08e88f56f6e4d803085eca5919df,
+    type: 3}
+  Picture1Camera: {fileID: 6075211929007267357, guid: f7382d6c10f7783438723580883f3b6b,
+    type: 3}
+  camSwitch: 0

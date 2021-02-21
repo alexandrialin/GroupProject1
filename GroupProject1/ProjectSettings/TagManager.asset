@@ -3,7 +3,25 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Picture
+  - Picture2
+  - Picture3
+  - PIcture1
+  - Picture4
+  - Picture1
+  - restart
+  - continue
+  - fox
+  - water
+  - fire
+  - earth
+  - air
+  - door
+  - back
+  - hint1
+  - hint2
+  - hint3
   layers:
   - Default
   - TransparentFX
